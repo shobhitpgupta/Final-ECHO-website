@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.header{
+    min-height: 20vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.957)), url(foot.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 120px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 30px;
+    position: relative;
+}
+.menu ul li a{
+    color: rgb(0, 183, 255);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.menu ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(255, 0, 255);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+#active{
+    background-color: rgba(255, 255, 255, 0.413);
+    padding: 20px;
+}
+#active a {
+    color: black;
+}
+
+/*schedule code start from here by Harish katariya and Rahul Singh Rawat*/
+.wrapper{
+	padding:15px 20%;
+	background:black;
+	color:cyan;
+	
+}
+.s-card{
+	margin:5px;
+	margin-bottom:20px;
+	width:230px;
+	height:250px;
+	border:1px solid white;
+	border-radius:4px;
+	transition:transform 0.4s;
+}
+.wrapper h3{
+	color:white;
+	margin:20px 0;
+	display: flex;
+	justify-content: center;
+}
+.wrapper p{
+	padding: 0 0 0 10px;
+	margin:20px 0 20px 1px;
+}
+.day-1, .day-2, .day-3, .day-4, .day-5{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.event-image{
+	width:230px;
+	height:100px;
+}	
+.s-card:hover{
+	background-color:grey;
+	transform:scale(1.06);
+	border:2px solid cyan;
+}
+/*schedule page code ends here*/
+.footer{
+    min-height: 32vh;
+    width: 100%;
+    background-image: url(foot.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .info h3, h4 {
+    color: white;
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+  .info{
+    position: absolute;
+    left: 5%;
+    top: 20px;
+    padding: 20px;
+    padding-right: 120px;
+    background-color: rgba(0, 0, 0, 0.642); 
+  }
+  .socialmedia{
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    font-size: 20px;
+  }
+  .fa {
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    width: 50px;
+    text-decoration: none;
+    padding-left: 50px;
+    background-color: rgba(0, 0, 0, 0.621);
+  }
+  .fa:hover{
+    color: red;
+    font-size: 25px;
+  }
+  .socialmedia h3{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  @media (max-width: 750px){
+    .footer{
+      min-height: 50vh;
+      width: 100%;
+      background-image: url(foot.png);
+      background-size: 3100px;
+      position: relative;
+      }
+      .socialmedia{
+        position: absolute;
+        top: 52%;
+        font-size: 30px;
+        left: 10%;
+      }
+      .socialmedia h3{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.648);
+        font-size: 15px;
+        padding: 10px 30px;
+      }
+      .fa {
+        display: inline-block;
+        color: white;
+        padding: 10px;
+        padding-left: 40px;
+        width: 50px;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.562);
+      }
+      .header{
+        background-size: 1700px;
+        min-height: 35vh;
+        background-color: black;
+    }
+    .menu-toggle {
+        font-size: 35px;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        position: absolute;
+        display: block;
+        right: 20px;
+        top: 50px;
+        }
+    /* nav{
+        display: flex;
+    } */
+    nav img{
+        width: 110px;
+        margin-top: 90%;
+        background-color: black;
+        position: sticky;
+    }
+    .menu{
+        background-color: black;
+    }
+  }

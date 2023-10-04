@@ -1,0 +1,535 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Croissant One', cursive
+}
+.header{
+  min-height: 110vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.146), rgba(0, 0, 0, 0.749)), url(black1.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 120px;
+  background-color: black;
+  padding: 20px;
+}
+nav img:hover{
+  background-color: rgba(255, 255, 255, 0.26);
+  padding: 20px;
+}
+.menu{
+  flex: 1;
+  text-align: right;
+  display: flex;
+}
+.menu li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 30px;
+  position: relative;
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.menu li a{
+  color: rgb(0, 183, 255);
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.menu li::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: rgb(255, 0, 255);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.menu li:hover::after{
+  width: 100%;
+}
+#active{
+  background-color: rgba(255, 255, 255, 0.413);
+  padding: 20px;
+}
+#active a {
+  color: black;
+}
+
+/* code for typewriter effect */
+#echo2023 {
+  color: rgb(0, 179, 255);
+  font-size: 45px;
+}
+#twozero{
+  color: #ff039a;
+  font-size: 42px;
+}
+#ishere{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+.css-typing{
+  font-family: 'Pixelify Sans', cursive;
+  position: absolute;
+  right: 42%;
+  top: 40%;
+}
+.css-typing p {
+  border-right: .15em solid rgb(255, 0, 230);
+  font-family: "Courier";
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.css-typing p:nth-child(1) {
+  width: 200px;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+  width: 200px;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-child(3) {
+  width: 200px;
+  opacity: 0;
+  -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+  animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 2s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+/* Code for body */
+.about{
+  background-color: black;
+  padding: 100px;
+}
+.about h1{
+  color: #0abbf6;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+#para1{
+  color: white;
+  text-align: center;
+  padding: 20px 50px;
+  padding-top: 40px;
+  font-size: large;
+}
+#para2{
+  color: white;
+  text-align: center;
+  padding: 0px 50px;
+  font-size: large;
+}
+/*--------gallery-------*/
+.gallery{
+  background-color: black;
+  padding-bottom: 50px;
+  text-align: center;
+  
+}
+.gallery h1{
+  color: white;
+  text-decoration: underline;
+  font-size: 40px;
+}
+.photos{
+  flex-basis: 32%;
+  border-radius: 10px;
+  /* margin-bottom: 30px; */
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+}
+.photos img{
+  width: 300px;
+  display: block;
+  padding: 20px;
+}
+.layer{
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+
+}
+.layer:hover{
+  background-color: #ff039a6f;
+}
+.layer h3{
+  text-align: center;
+  right: 30%;
+  left: 30%;
+  width: 100%;
+  font-weight: 500;
+  opacity: 0;
+  color: white;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  transition: 0.5s;
+  right: 30%;
+  left: 50%;
+}
+.layer:hover h3{
+top: 10%;
+opacity: 1;
+}
+.fe h2{
+  color: #0abbf6;
+  padding: 10px;
+  font-size: large;
+}
+.spt h2{
+  color: #0abbf6;
+  padding: 10px;
+  font-size: large;
+}
+.srng h2{
+  color: #0abbf6;
+  padding: 10px;
+  font-size: large;
+}
+.keyfeatures{
+  background-color: black;
+  padding-bottom: 50px;
+}
+.keyfeatures ul{
+padding-left: 375px;
+}
+.keyfeatures h1{
+  color: #0abbf6;
+  font-size: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.keyfeatures li{
+  list-style: none;
+  background-image: url(cpu.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 35px;
+  color: white;
+  font-size: 30px;
+  margin: 5px;
+  padding: 10px 50px;
+
+}
+
+.merch{
+background-color: black;
+text-align: center;
+padding: 50px 0px;
+}
+.merch img{
+width: 90%;
+min-height: 110vh;
+padding: 20px;
+}
+.merch p{
+color: white;
+font-size: 40px;
+padding-bottom: 20px;
+}
+.merch button{
+text-decoration: none;
+text-transform: uppercase;
+padding: 10px 25px;
+font-size: 20px;
+color: black;
+background-color: #0abbf6;
+border-radius: 5px;
+}
+.mainevents{
+  background-color: black;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.mainevents h1{
+  padding-top: 40px;
+  color: #0abbf6;
+  text-align: center;
+  font-size: 40px;
+}
+.mainevents img{
+  width: 70%;
+  padding: 20px;
+  position: inherit;
+}
+/* Footer code for all pages */
+.footer{
+  min-height: 32vh;
+  width: 100%;
+  background-image: url(foot.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.info h3, h4 {
+  color: white;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+.info{
+  position: absolute;
+  left: 5%;
+  top: 20px;
+  padding: 20px;
+  padding-right: 120px;
+  background-color: rgba(0, 0, 0, 0.642); 
+}
+.socialmedia{
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  font-size: 20px;
+}
+.fa {
+  display: inline-block;
+  color: white;
+  padding: 20px;
+  width: 50px;
+  text-decoration: none;
+  padding-left: 50px;
+  background-color: rgba(0, 0, 0, 0.621);
+}
+.fa:hover{
+  color: red;
+  font-size: 30px;
+}
+.socialmedia h3{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 750px){
+  .footer{
+    min-height: 55vh;
+    width: 100%;
+    background-image: url(foot.png);
+    background-size: 3100px;
+    position: relative;
+    }
+    .socialmedia{
+      position: absolute;
+      top: 60%;
+      font-size: 30px;
+      left: 10%;
+    }
+    .socialmedia h3{
+      color: white;
+      background-color: rgba(0, 0, 0, 0.648);
+      font-size: 15px;
+      padding: 10px 30px;
+    }
+    .fa {
+      display: inline-block;
+      color: white;
+      padding: 10px;
+      padding-left: 40px;
+      width: 50px;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.562);
+    }
+}
+
+
+@media (max-width: 750px) {
+.about{
+  background-color: black;
+  padding: 60px 10px;
+}
+}
+
+.menu-toggle {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    position: absolute;
+    display: block;
+    right: 20px;
+    top: 20px;
+  }
+  .menu{
+    display: none;
+    flex-direction: column;
+  }
+  nav img{
+    position: absolute;
+  }
+  nav{
+    display: inline-block;
+    justify-content: space-between;
+  }
+  .menu li {
+    width: 100%;
+    z-index: 2;
+  }
+  .header{
+    background-size: 1450px;
+    min-height: 100vh;
+    }
+  .css-typing{
+    left: 25%;
+    z-index: 1;
+  }
+  .merch img{
+    width: 90%;
+    min-height: 25vh;
+    padding: 20px;
+  }
+}
+
+
+@media (max-width: 768px){
+  .keyfeatures{
+    text-align: center;
+    padding: 10px 10px;
+  }
+  .keyfeatures ul{
+    padding-left: 23px;
+    }
+  .keyfeatures ul li{
+    font-size: 15px;
+  }
+  .merch p{
+    color: white;
+    font-size: 40px;
+    padding: 5px 10px;
+    }
+}
+
+
+
