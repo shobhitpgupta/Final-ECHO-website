@@ -211,4 +211,29 @@ nav img{
   background-color: black;
   color: #ff039a;
 }
+.gridtable { width: 100%; }
+@media screen and (max-width:768px) {
+  .gridtable tr {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 3px;
+    margin-bottom: 3px;
+  }
+}
+.gridtable{
+  text-align: center;
+  padding: 50px;
+}
+.gridtable tr th{
+  padding: 20px;
+  padding-top: 50px
+}
+.gridtable tr td p{
+  color: #0abbf6;
+}
+.main-team{
+  background-color: black;
+  color: #ff039a;
+}
+
 
